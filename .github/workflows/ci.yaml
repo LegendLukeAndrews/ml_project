@@ -27,3 +27,6 @@ jobs:
       - name: Lint
         run: |
           flake8 src/
+
+      - name: Check formatting
+        run: black --check src/
